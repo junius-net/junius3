@@ -1,0 +1,63 @@
+:root {
+  /* SOFT THEME VARIABLES */
+  --soft-lavender: #E8DEFF;
+  --soft-sage: #B2C9AD;
+  --soft-pearl: #F7F2E9;
+  --soft-pink: #F0D9D9;
+  --soft-sky: #C5D8E8;
+  
+  /* DARK THEME VARIABLES */
+  --dark-black: #0A0A0A;
+  --dark-blue: #4B6CB7;
+  --dark-purple: #2D1B69;
+  --dark-emerald: #1A4A3A;
+  --dark-silver: #C0C0C0;
+  --dark-gold: #C9A84C;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  transition: background-color 0.9s ease-in-out, color 0.9s ease-in-out, border-color 0.9s ease-in-out, fill 0.9s ease-in-out, stroke 0.9s ease-in-out;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cormorant), serif;
+  font-weight: 400;
+}
+
+/* Clases base dinámicas */
+.theme-soft,
+.theme-dark {
+  transition: background-color 0.9s ease-in-out, color 0.9s ease-in-out, border-color 0.9s ease-in-out, fill 0.9s ease-in-out, stroke 0.9s ease-in-out;
+}
+
+.theme-soft {
+  background-color: var(--soft-pearl);
+  color: #333333;
+}
+
+.theme-dark {
+  background-color: var(--dark-black);
+  color: var(--dark-silver);
+}
+
+.theme-dark h1, .theme-dark h2, .theme-dark h3 {
+  color: var(--soft-pearl);
+}
+
+.theme-soft h1, .theme-soft h2, .theme-soft h3 {
+  color: #111111;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
